@@ -44,9 +44,11 @@ title: My Computer Science ePortfolio
   <li><a href="files/enhanced_artifact_3.zip">Download Enhanced ZIP</a></li>
 </ul>
 <h2>Narrative</h2>
-<p>
-  
-</p>
+<p>For this final category, I chose the very same artifact as the previous two categories. This mobile weight-tracking app began as a project from the CS 360: Mobile Architecture and Programming course that I took in September of 2024. This app allows users to enter their height and weight daily to calculate their BMI. Users can also filter their entries by BMI and date, and also see their minimum, maximum, and average BMI.</p>
+<p> I chose this artifact for my ePortfolio because it showcases my knowledge of database implementation within a mobile application. I have successfully created SQLite tables with queries that will retrieve entries specific to user ID, secured user passwords using SHA-256 hashing, and across sessions I have maintained data consistency. More specifically, I used Intents to pass the user’s unique ID between activities, which allowed me to display user-specific data pulled from the database. This unique user ID is also used in database queries to filter entries based on the user ID. I also cleaned up database operations by refactoring the DatabaseHelper class to apply input validation. These enhancements modify the user experience and improve security.</p>
+<p> During the enhancements for this category, I didn’t even realize that entries were accessible across users. I tested this by using two different logins and found that entries were accessible from multiple users. I tested again after my enhancements and found that entries were only accessible to the user that inputted them. I did run into a challenge with making sure the userId reliably persisted across the various activities without causing pointer exceptions. To resolve this, I used Intent extras to pass the userId and validated it before accessing the database.</p>
+<p>Course outcome 3, design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts, was met by filtering data based on user ID and using structured queries. Course outcome 4, demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals, was met by maintaining a consistent, secure user experience across sessions by passing the user’s unique ID between activities. Upon uploading my ePortfolio and publishing it for the public to see, I will satisfy course outcome 1, employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science. </p>
+
 
 <footer>
   <p><strong>Contact:</strong> your.email@example.com</p>
